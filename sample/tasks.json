@@ -1,0 +1,14 @@
+{
+  "budget": 2,
+  "parent_error_code": "E_NO_PARENT",
+  "dup_error_code": "E_DUP_TASK",
+  "task_error_code": "E_NO_TASK",
+  "event_error_code": "E_BAD_EVENT",
+  "state": { "tasks": [], "cancelled": [], "ledger": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "spawn", "task": 1, "parent": 0 },
+    { "id": 2, "kind": "spawn", "task": 2, "parent": 1 },
+    { "id": 3, "kind": "spawn", "task": 3, "parent": 1 },
+    { "id": 4, "kind": "cancel", "task": 1 }
+  ]
+}
